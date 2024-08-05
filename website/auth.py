@@ -2,8 +2,8 @@ from flask import Blueprint, render_template, request, flash
 # from form_val import check_email, check_name, check_password
 import re
 
-def check_email(email):
-    if re.search(r"^.+@.+\..+", email):
+def check_email(mail):
+    if re.search(r"^.+@.+\..+", mail):
         return True
     return False
 
@@ -38,15 +38,15 @@ def sign_up():
         password2 = request.form.get('password2')
 
     
-    # Refactor this code in the future
-    if not check_email(email):
-        flash("Invalid Email", category='error')
-    elif not check_name(firstname):
-        flash("Invalid Name", category='error')
-    elif not check_password(password1, password2):
-        flash("Invalid Passwords", category='error')
-    else:
-        # Add user to database
-        flash("Account Created", category="success")
+        # Refactor this code in the future
+        if not check_email(email):
+            flash("Invalid Email", category='error')
+        elif not check_name(firstname):
+            flash("Invalid Name", category='error')
+        elif not check_password(password1, password2):
+            flash("Invalid Passwords", category='error')
+        else:
+            # Add user to database
+            flash("Account Created", category="success")
 
     return render_template("signup.html")
