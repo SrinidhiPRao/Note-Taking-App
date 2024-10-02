@@ -65,3 +65,8 @@ http://localhost:3000
 
 - Your data is persisted even if the container is stopped or removed.
 
+### 4. Close the Application
+```bash
+docker compose down
+```
+This will close the application. Visit `http://localhost:3000` to confirm.
