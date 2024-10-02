@@ -14,11 +14,7 @@ This is a simple **Flask**-based note-taking application using **SQLite** as the
 
 ## Prerequisites
 
-Ensure that the following are installed on your machine:
-
-- **Docker**: [Install Docker](https://docs.docker.com/get-docker/)
-- **Docker Compose**: [Install Docker Compose](https://docs.docker.com/compose/install/)
-
+Ensure that Docker Desktop is installed on your machine.
 ---
 
 ## Getting Started
