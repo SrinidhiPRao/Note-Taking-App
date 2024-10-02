@@ -1,12 +1,12 @@
-import re
+from re import search
 
 def check_email(mail):
-    if re.search(r"^.+@.+\..+", mail):
+    if search(r"^.+@.+\..+", mail):
         return True
     return False
 
 def check_name(name):
-    if re.search(r"[a-zA-Z+]", name):
+    if search(r"[a-zA-Z+]", name):
         return True
     return False
 
