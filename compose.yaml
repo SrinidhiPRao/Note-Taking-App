@@ -9,4 +9,7 @@ services:
       - ./instance:/app/instance  
     environment:
       - FLASK_ENV=development
-   
+    develop:
+      watch:
+        - path: .
+          action: rebuild
