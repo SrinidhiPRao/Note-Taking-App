@@ -39,7 +39,7 @@ docker-compose build
 #### Start the application
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 This command will:
@@ -63,6 +63,6 @@ http://localhost:3000
 
 ### 4. Close the Application
 ```bash
-docker compose down
+docker-compose down
 ```
 This will close the application. Visit `http://localhost:3000` to confirm.
